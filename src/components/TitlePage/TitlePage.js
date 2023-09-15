@@ -2,27 +2,33 @@ import "./style.css"
 import { Link, Outlet } from "react-router-dom";
 
 const TitlePage = () => {
+
+	var title = window.location.pathname;
+	title == "/" ? (title = "Home") : (title = title.substring(1));
+
 	return (
-		<header>
-			<div className="title_page">
-				<h1>Éval News Network</h1>
-				<nav>
-					<ul>
-						<li>
-							<Link to="/">Home</Link>
+		<header className="header_main">
+			<div className="header_main_div">
+				<h1 className="header_main_title">Éval News Network</h1>
+				<h2 className="header_page_title">{title}</h2>
+				<nav className="header_nav">
+					<ul className="header_list">
+						<li className="item_nav">
+							<Link className="item_link" to="/">Home</Link>
 						</li>
-						<li>
-							<Link to="/news">News</Link>
+						<li className="item_nav">
+							<Link className="item_link" to="/news">News</Link>
 						</li>
-							<Link to="/register">Register</Link>
-						<li>
-							<Link to="/contact">Contact</Link>
+						<li className="item_nav">
+							<Link className="item_link" to="/register">Register</Link>
+						</li>
+						<li className="item_nav">
+							<Link className="item_link" to="/contact">Contact</Link>
 						</li>
 					</ul>
 				</nav>
-
-				<Outlet />
 			</div>
+				<Outlet />
 		</header>
 	);
 };

@@ -1,0 +1,34 @@
+.header_main_div {
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+}
+
+.header_main_div .header_logo img {
+	width: 150px;
+}
+
+.header_main_div .header_main_title {
+	color: white;
+}
+
+.header_main_div .header_page_title {
+	color: white;
+}
+
+.header_main_div .header_list {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_list .item_nav {
+	list-style: none;
+	margin: 20px;
+}
+
+.header_list .item_nav .item_link {
+	color: white;
+	text-decoration: none;
+}

@@ -3,5 +3,5 @@
 Projet réalisé par Quentin Lemaire
 
 # Fait :
-- Création de plusieurs pages Web grâce à React Rooter
+- Création de plusieurs pages Web grâce à React Router
 - implémentation d'un menu de navigation dans le Header

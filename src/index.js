@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Contact from "./pages/Contact"
@@ -11,6 +12,19 @@ import Layout from "./pages/Layout"
 
 
 export default function App(){
+
+  const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+      fetch("https://freefakeapi.io/api#collection_posts")
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          setArticles(data.articles);
+        })
+        .catch(err => console.log(err))
+    }, []); 
+
   return (
     <BrowserRouter>
       <Routes>
