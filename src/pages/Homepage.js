@@ -1,11 +1,10 @@
 import PostGrid from "../components/PostGrid/PostGrid"
 
-const Homepage = () => {
-	const articles = "test articles"
+const Homepage = (articles) => {
 	return (
 		<div className="home_page">
 			<h1>Home</h1>
-			<PostGrid articles={articles} />
+			<PostGrid article={articles} />
 		</div>
 	);
 };

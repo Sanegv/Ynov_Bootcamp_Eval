@@ -3,8 +3,8 @@ import "./style.css"
 const PostCard = ({article}) => {
 	return (
 		<div className="postcard">
-			<p>{article}</p>
-			<p>test article</p>
+			<p>{article.title}</p>
+			<img src={article.picture} />
 		</div>
 	);
 };

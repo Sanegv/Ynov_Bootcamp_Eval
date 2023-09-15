@@ -1,0 +1,16 @@
+.normal {
+	width: 150px;
+	margin: 10px;
+}
+
+.long {
+	width: 400px;
+	margin: 10px;
+}
+
+.big {
+	margin: 10px;
+	width: 400px;
+	height: 400px;
+	text-align: left;
+}

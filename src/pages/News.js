@@ -1,6 +1,8 @@
 const News = () => {
 	return (
-		<h1>Latest articles:</h1>
+		<div className="news_page">
+			<h1 className="news_page_title">Latest articles:</h1>
+		</div>
 	);
 };
 

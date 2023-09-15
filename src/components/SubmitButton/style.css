@@ -1,0 +1,8 @@
+.submit_button {
+	width: 150px;
+	height: 30px;
+	background-color: yellow;
+	border-radius: 15px;
+	border-style: none;
+	margin: 10px;
+}

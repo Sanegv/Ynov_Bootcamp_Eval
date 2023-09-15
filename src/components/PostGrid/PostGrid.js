@@ -3,7 +3,14 @@ import PostCard from "../PostCard/PostCard"
 
 const PostGrid = (articles) => {
 	return (
-		<PostCard article={"test"} />
+		<div className="post_grid">
+			{articles.map(
+				(article) => (
+					<div><PostCard article={article} />
+					<p>test</p></div>
+				)
+			)}
+		</div>
 	);
 };
 
